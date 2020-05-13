@@ -94,11 +94,11 @@ db.collection('details').insertOne(data,function(err, collection){
 }) 
 
 app.get('/',function(req,res){
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/views/index.html');
 })
 
 app.get('/login',function(req,res){
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/views/index.html');
 })
 
 
@@ -108,11 +108,11 @@ app.get('/login',function(req,res){
   // })
 
 app.get('/registration',function(req,res){
-    res.sendfile('registration.html');
+    res.sendfile(__dirname+'/views/registration.html');
 })
 
 app.get('/welcome',(req,res)=>{
-  res.sendfile(__dirname + '/welcome.html');
+  res.sendfile(__dirname + '/views/welcome.html');
 }) 
 // app.get('/welcome',function(req,res){
 //   res.sendfile('welcome.html');

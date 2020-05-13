@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient( to right,#02a1c1,#51adbd);
+  }
+
+  .navbar{
+    
+    border-radius: 5px;
+  }
+
+  form{
+    background-color: white;
+    margin-top: -15%;
+    padding: 20px;
+    border-radius: 10px;
+    height: 50%;
+    width: 50%;
+    margin-left: 50%;
+    box-shadow: black 4px 4px 8px;
+
+  }
+
+.intro{
+  width: 40%;
+  margin-top: 10%;
+  color: white;
+}

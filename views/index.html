@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" type="text/css" href="../static/style.css">  
+    <title>Home</title>
+</head>
+
+<style>
+  body{
+     
+    background-color: #61c8ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2348b1d0'/%3E%3Cstop offset='1' stop-color='%2348b1d0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2364cde8'/%3E%3Cstop offset='1' stop-color='%2364cde8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234bb6b3'/%3E%3Cstop offset='1' stop-color='%234bb6b3' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2361c8ff'/%3E%3Cstop offset='1' stop-color='%2361c8ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231d9692'/%3E%3Cstop offset='1' stop-color='%231d9692' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2366d1cf'/%3E%3Cstop offset='1' stop-color='%2366d1cf' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .heading{
+    font-size: 50px;
+    
+    letter-spacing: 4px;
+    text-align: left !important;
+    text-shadow: 2px 2px white;
+  }
+
+  .navbar{
+    
+   background-color: black !important;
+   width: 100%;
+   height: 70px;
+   box-shadow: 20px 7px 10px rgb(29, 29, 29);
+  }
+  .navbar-nav{
+    margin-left: 45%;
+    
+  }
+
+  .nav-item{
+    color: white !important;
+    border-bottom: 1px solid white;
+
+     }
+
+
+  form{
+    background-color: white;
+    margin-top: -15%;
+    padding: 20px;
+    height: 50%;
+    width: 40%;
+    box-shadow: black 4px 4px 8px;
+    margin-left: 55%;
+
+  }
+
+.intro{
+  width: 48%;
+  margin-top: 10%;
+  color: black;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: justify;
+}
+.logo{
+  color: white;
+  margin-left: 8%;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 8px;
+}
+.btn{
+  
+  margin-top: -2%;
+  margin-bottom: 4%;
+  border-radius: 0px;
+  box-shadow: 1px 1px 8px black;
+}
+.box{
+  text-align: center;
+}
+
+</style>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+   <div class="logo">GLASSEYE TECHNOLOGIES</div> 
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/">HOME <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/registration">SIGN UP</a>
+        <a class="nav-item nav-link" href="#">PROFILE</a>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+
+    <div class="intro">
+      
+      <div class ="heading"><b>Welcome to Iceey!</b></div>
+      <p>
+      A virtual network with endless possibilites supporting inclusivity and diversity.
+    </p>
+    </div>
+
+    <form action="/welcome">
+       <h2>Sign in!</h2> 
+        <div class="box">
+        <div class="form-group">
+          <label for="exampleInputEmail1"></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter your Username">
+         
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1"></label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Enter your password">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        <br> Not a member yet? 
+        <a href="/registration">Register Now!</a>
+      </div>
+      </form>
+    </div>
+
+
+</body>
+</html>
