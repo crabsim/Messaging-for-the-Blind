@@ -84,19 +84,20 @@
     }
 
     #send-button{
-      margin-left: 10%;
-      background-color: white;
-      border:1px solid #3aabb4;
-      font-weight: bold;
-      box-shadow: 2px 2px 2px #3aabb4;
-    }
-
-    #btnGiveCommand{
       margin-left: 8%;
       background-color: white;
       border:1px solid #3aabb4;
       font-weight: bold;
       box-shadow: 2px 2px 2px #3aabb4;
+      border-radius: 5px;
+     
+    }
+
+    #btnGiveCommand{
+      margin-left: 8%;
+      margin-top: -1.5%;
+      background-color: white;
+     
   
     }
 
@@ -108,7 +109,7 @@
 
     #imageFile{
       background-color: white;
-      margin-left: 2%;  
+      margin-left: 8%;  
       width: 102px;
       box-shadow: 2px 2px 2px #3aabb4;
       padding: 2px;
@@ -152,11 +153,13 @@
   margin-top: 2%;
   height: 300px;
   width: 30%;
+  padding: 10px;
 }
 
 #textmessage{
   height:20px;
   width:20px;
+  margin-left: -45%;
 }
 </style>
 
@@ -191,10 +194,10 @@
     <span id='message'></span>
     <form id="send-container">
         <input type="text" id="message-input"><br>
+        <img src="../static/download.jpg"  height = 40px weight = 50px id='btnGiveCommand' onclick = "speechText('Speak Now')">
+        <input type="submit" id="send-button" onclick = "speechText('Message Sent!')"></input>
         <input type="file" id="imageFile" onclick = "speechText('Send an Image')"><br/>
-        <input type="submit" id="send-button" onclick = "speechText('This is the submit button')"></input>
-        <img src="../static/download.jpg"  height = 50px weight = 50px id='btnGiveCommand' onclick = "speechText('Speak Now')">
-    </form>
+      </form>
    
   </div>
 </div>
@@ -280,8 +283,8 @@
 
               var a = data.msg;
               var b = a.toString();
-              var c =''
-              $chat.append('<button id = "textmessage" onclick = "speechText(\''+ b+' \')" ></button')
+    
+              $chat.append('<img src ="../static/speaker.png" id = "textmessage" onclick = "speechText(\''+ b+' \')" >')
             })
         
         
