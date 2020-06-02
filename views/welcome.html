@@ -5,26 +5,32 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
+    <link type="text/css"  href = "/style1.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <!-- <script defer scr="script.js"></script> -->
 </head>
 <style>
     body {
-      background-color: #61c8ff;
+    background-color: #61c8ff;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2348b1d0'/%3E%3Cstop offset='1' stop-color='%2348b1d0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2364cde8'/%3E%3Cstop offset='1' stop-color='%2364cde8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234bb6b3'/%3E%3Cstop offset='1' stop-color='%234bb6b3' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2361c8ff'/%3E%3Cstop offset='1' stop-color='%2361c8ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231d9692'/%3E%3Cstop offset='1' stop-color='%231d9692' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2366d1cf'/%3E%3Cstop offset='1' stop-color='%2366d1cf' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
     }
+    
     .container{
+    
+    }
+
+    .chatbot{
       margin-top: 2%;
       margin-left: 30%;
       background-color: white;
       box-shadow: 10px 7px 10px rgb(29, 29, 29);
-      height: 80vh;
+      height: 70vh;
       width: 50vw;
-      margin-left: 15%;
+      margin-left: 35%;
       position: absolute;
     }
 
@@ -32,11 +38,12 @@
       margin-left: 20%;
       margin-top: 10vh;
       width: 30%;
-      border-radius: 25px;
-      font-size: 20px;
-      
-      
+     
+      font-size: 20px; 
     }
+
+
+
     #message-container div {
       
       background-color: #CCC;
@@ -46,8 +53,9 @@
       padding-top: 10px;
       padding-bottom: 10px;
       margin-top: 2%;
-      margin-left: -10vw;
-      width: 30vw;
+      margin-left:-8vw;
+      width: 20vw;
+      border: 1px solid black;
       
     }
     #message-container div:nth-child(2n) {
@@ -57,8 +65,9 @@
       margin-top: 2%;
       background-color: #FFF;
       text-align: right;
-      margin-left: 18vw;
-      width: 30vw;
+      margin-left: 17vw;
+      width: 20vw;
+      border: 1px solid black;
     }
     #send-container {
       
@@ -66,13 +75,30 @@
       bottom: 0;
       margin-bottom: 5%;
       margin-left: 2%;
-      height: 5%;
+      height: 8%;
       padding: 10px;
-      border-radius: 10px;
       background-color: white;
       max-width: 1200px;
       width: 30%;
       display: flex;
+    }
+
+    #send-button{
+      margin-left: 8%;
+      background-color: white;
+      border:1px solid #3aabb4;
+      font-weight: bold;
+      box-shadow: 2px 2px 2px #3aabb4;
+      border-radius: 5px;
+     
+    }
+
+    #btnGiveCommand{
+      margin-left: 8%;
+      margin-top: -1.5%;
+      background-color: white;
+     
+  
     }
 
     #message-input {
@@ -82,27 +108,112 @@
     }
 
     #imageFile{
-      margin-left: 2%;
-      
+      background-color: white;
+      margin-left: 8%;  
+      width: 102px;
+      box-shadow: 2px 2px 2px #3aabb4;
+      padding: 2px;
     }
 
+    .logo{
+      color: white;
+      margin-left: 8%;
+      font-size: 30px;
+      letter-spacing: 8px;
+    }
+
+  
+    .navbar{
+    background-color: black !important;
+    width: 100%;
+    height: 70px;
+    box-shadow: 20px 7px 10px rgb(29, 29, 29);
+  
+   }
+
+   .navbar-nav{
+     margin-left: 45%;
+     border-bottom: 1px solid white;
+   }
+ 
+   .nav-item{
+     color: white !important;
+     
+  }
+ .sendimage{
+  margin-top: 2%;
+  width : 150px;
+  height: 150px;
+  margin-left: -7vw;
+ }
+
+.online{
+  background-color: white;
+  margin-left: 4%;
+  margin-top: 2%;
+  height: 300px;
+  width: 30%;
+  padding: 10px;
+}
+
+#textmessage{
+  height:20px;
+  width:20px;
+  margin-left: -45%;
+}
 </style>
+
+
+
+
+
+
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+    <div class="logo">GLASSEYE TECHNOLOGIES</div> 
+     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+       <div class="navbar-nav">
+         <a class="nav-item nav-link active" href="/">HOME </a>
+         <a class="nav-item nav-link" href="/registration">SIGN UP</a>
+         <a class="nav-item nav-link" href="#">PROFILE</a>
+         <a class="nav-item nav-link" href="/blog">BLOG</a>
+ 
+       </div>
+     </div>
+   </nav>
+
+
+   
   <input type="hidden" id='txtInput' value="Welcome to Eye" /> <br><br>  
   <div class="container">
+
+
+    <div class = "chatbot">
     <div id ="message-container"></div>
     <span id='message'></span>
     <form id="send-container">
         <input type="text" id="message-input"><br>
-        <input type="file" id="imageFile"  /><br/>
-        
-        <input type="submit" id="send-button"></input>
-        <button id='btnGiveCommand'>Give Command!</button>
-    </form>
+        <img src="../static/download.jpg"  height = 40px weight = 50px id='btnGiveCommand' onclick = "speechText('Speak Now')">
+        <input type="submit" id="send-button" onclick = "speechText('Message Sent!')"></input>
+        <input type="file" id="imageFile" onclick = "speechText('Send an Image')"><br/>
+      </form>
    
   </div>
+</div>
+
+<div class = "online">
+<h4>Check if your friends are online!</h4>  
+<button id = "sample" onclick = "speechText('Check if your friends are online!')">Speak</button>
+
+</div>
+
+
+
+
     <script src="/socket.io/socket.io.js"></script>
     <script>
+
       //var message = document.querySelector('#message');getinput
       
       // var $chat=$('#message-container');
@@ -115,6 +226,7 @@
 
         var recognition = new SpeechRecognition();
         var speechRecognitionList = new SpeechGrammarList();
+        var synth = window.speechSynthesis;
         speechRecognitionList.addFromString(grammar, 1);
         recognition.grammars = speechRecognitionList;
         recognition.lang = 'en-US';
@@ -138,30 +250,43 @@
             recognition.start();
 
         });
+
+        
+      function speechText(stringval){
+        console.log("Reached2")
+        var utterThis = new SpeechSynthesisUtterance(stringval);;
+        synth.speak(utterThis);
+      }
       
         //submit-message
        var socket=io();
        var $chat=$('#message-container');
        socket.on('addimage',function(msg,base64image){
           $chat.append(
-            $('<p>').append('<a target="_blank" href="'+base64image+'"><img src="'+base64image+'" /></a>')
+            $('<p>').append('<a target="_blank" href="'+base64image+'"><img class ="sendimage" src="'+base64image+'" /></a>')
             )
         });
        $(function(){
         var $messageForm=$('#send-container');
-       var $message=$('#message-input');
-       var $chat=$('#message-container');
-       var $img=$('#imageFile');
+        var $message=$('#message-input');
+        var $chat=$('#message-container');
+        var $img=$('#imageFile');
         var $btn=$('#send-button');
-       $messageForm.submit(function(e){
-         e.preventDefault();
-         socket.emit('send message',$message.val());
-        $message.val('');
-        })
-        socket.on('new message',function(data){
-          $chat.append('<div class="well">'+data.msg+'</div>')
-        })
-     
+          
+          $messageForm.submit(function(e){
+            e.preventDefault();
+            socket.emit('send message',$message.val());
+            $message.val('');
+            })
+            socket.on('new message',function(data){
+              $chat.append('<div class="well">'+data.msg+'</div>')
+
+              var a = data.msg;
+              var b = a.toString();
+    
+              $chat.append('<img src ="../static/speaker.png" id = "textmessage" onclick = "speechText(\''+ b+' \')" >')
+            })
+        
         
         $('#imageFile').on('change',function(e){
           var file=e.originalEvent.target.files[0];

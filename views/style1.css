@@ -1,0 +1,101 @@
+
+    body {
+    background-color: black;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2348b1d0'/%3E%3Cstop offset='1' stop-color='%2348b1d0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2364cde8'/%3E%3Cstop offset='1' stop-color='%2364cde8' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234bb6b3'/%3E%3Cstop offset='1' stop-color='%234bb6b3' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2361c8ff'/%3E%3Cstop offset='1' stop-color='%2361c8ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%231d9692'/%3E%3Cstop offset='1' stop-color='%231d9692' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2366d1cf'/%3E%3Cstop offset='1' stop-color='%2366d1cf' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    }
+    .container{
+      margin-top: 2%;
+      margin-left: 30%;
+      background-color: white;
+      box-shadow: 10px 7px 10px rgb(29, 29, 29);
+      height: 80vh;
+      width: 50vw;
+      margin-left: 15%;
+      position: absolute;
+    }
+
+    #message-container {
+      margin-left: 20%;
+      margin-top: 10vh;
+      width: 30%;
+      border-radius: 25px;
+      font-size: 20px;
+      
+      
+    }
+    #message-container div {
+      
+      background-color: #CCC;
+      border-radius: 25px;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 2%;
+      margin-left: -10vw;
+      width: 30vw;
+      
+    }
+    #message-container div:nth-child(2n) {
+      padding-right: 30px;
+      padding-left: 30px;
+      border-radius: 25px;
+      margin-top: 2%;
+      background-color: #FFF;
+      text-align: right;
+      margin-left: 18vw;
+      width: 30vw;
+    }
+    #send-container {
+      
+      position: fixed;
+      bottom: 0;
+      margin-bottom: 5%;
+      margin-left: 2%;
+      height: 5%;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: white;
+      max-width: 1200px;
+      width: 30%;
+      display: flex;
+    }
+
+    #message-input {
+      flex-grow: 1;
+      padding: 12px;
+      border-radius: 25px;
+    }
+
+    #imageFile{
+      margin-left: 2%;  
+    }
+    .logo{
+    color: white;
+    margin-left: 8%;
+    font-size: 30px;
+    letter-spacing: 8px;
+  }
+
+    .navbar{
+    
+    background-color: black !important;
+    width: 100%;
+    height: 70px;
+    box-shadow: 20px 7px 10px rgb(29, 29, 29);
+   }
+
+   .navbar-nav{
+     margin-left: 45%;
+     
+   }
+ 
+   .nav-item{
+     color: white !important;
+     border-bottom: 1px solid white;
+  }
+
+

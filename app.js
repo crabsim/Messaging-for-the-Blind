@@ -101,7 +101,9 @@ app.get('/login',function(req,res){
   res.sendFile(__dirname + '/views/index.html');
 })
 
-
+app.get('/blog',function(req,res){
+  res.sendFile(__dirname + '/views/blog.html');
+})
   
   // app.get('/welcome', ensureAuthenticated,function(req,res){
   //   res.sendFile('/welcome.html')
@@ -110,6 +112,8 @@ app.get('/login',function(req,res){
 app.get('/registration',function(req,res){
     res.sendfile(__dirname+'/views/registration.html');
 })
+
+app.use('/static', express.static(__dirname + '/static'));
 
 app.get('/welcome',(req,res)=>{
   res.sendfile(__dirname + '/views/welcome.html');
