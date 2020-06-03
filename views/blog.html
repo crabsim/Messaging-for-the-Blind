@@ -106,6 +106,7 @@
       <p>
       A portal to read some great articles.
     </p>
+    <button onclick="pause()"> Pause</button>
     <div class="blog" id = "blog1">
  <h5> The Ant and the Grasshopper <img src ="../static/speaker.png" id = "speaker" onclick = "speechText()" ></h5>
  <p>
@@ -150,6 +151,11 @@
         console.log(inputTxt)
         var utterThis = new SpeechSynthesisUtterance(inputTxt);;
         synth.speak(utterThis);
+      }
+
+
+      function pause(){
+        synth.pause();
       }
 </script>
 </html>
