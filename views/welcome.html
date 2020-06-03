@@ -154,6 +154,7 @@
   height: 300px;
   width: 30%;
   padding: 10px;
+  box-shadow:4px 4px 10px rgb(29, 29, 29);
 }
 
 #textmessage{
@@ -204,8 +205,7 @@
 
 <div class = "online">
 <h4>Check if your friends are online!</h4>  
-<button id = "sample" onclick = "speechText('Check if your friends are online!')">Speak</button>
-
+<img src ="../static/speaker.png" id = "speaker" onclick = "speechText('Check if your friends are online!')" height ="20px" width = 20px>
 </div>
 
 
@@ -253,7 +253,6 @@
 
         
       function speechText(stringval){
-        console.log("Reached2")
         var utterThis = new SpeechSynthesisUtterance(stringval);;
         synth.speak(utterThis);
       }

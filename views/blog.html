@@ -66,6 +66,19 @@
 }
 
 
+.blog{
+  padding: 15px;
+  font-size: 15px;
+  background-color: white;
+  width: 200%;
+  box-shadow:4px 4px 10px rgb(29, 29, 29);
+  
+}
+
+#speaker{
+  height: 20px;
+  width: 20px;
+}
 
 </style>
 
@@ -79,6 +92,8 @@
         <a class="nav-item nav-link active" href="/">HOME <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="/registration">SIGN UP</a>
         <a class="nav-item nav-link" href="#">PROFILE</a>
+        <a class="nav-item nav-link" href="/blog">BLOG</a>
+ 
 
       </div>
     </div>
@@ -91,7 +106,50 @@
       <p>
       A portal to read some great articles.
     </p>
-    </div>
+    <div class="blog" id = "blog1">
+ <h5> The Ant and the Grasshopper <img src ="../static/speaker.png" id = "speaker" onclick = "speechText()" ></h5>
+ <p>
+   
+  One bright day in late autumn a family of Ants were bustling about in the warm sunshine, drying out the grain they had stored up during the summer, when a starving Grasshopper, his fiddle under his arm, came up and humbly begged for a bite to eat.
+
+  "What!" cried the Ants in surprise, "haven't you stored anything away for the winter? What in the world were you doing all last summer?"
+  
+  "I didn't have time to store up any food," whined the Grasshopper; "I was so busy making music that before I knew it the summer was gone."
+  
+  The Ants shrugged their shoulders in disgust.
+  
+  "Making music, were you?" they cried. "Very well; now dance!" And they turned their backs on the Grasshopper and went on with their work.
+ </p>
+</div>
+<br>
+<div class="blog" id = "blog2">
+  <h5>The Goose & the Golden Egg <img src ="../static/speaker.png" id = "speaker" onclick = "speechText2()" ></h5>
+  <p>
+    
+    There was once a Countryman who possessed the most wonderful Goose you can imagine, for every day when he visited the nest, the Goose had laid a beautiful, glittering, golden egg.
+
+    The Countryman took the eggs to market and soon began to get rich. But it was not long before he grew impatient with the Goose because she gave him only a single golden egg a day. He was not getting rich fast enough.
+    
+    Then one day, after he had finished counting his money, the idea came to him that he could get all the golden eggs at once by killing the Goose and cutting it open. But when the deed was done, not a single golden egg did he find, and his precious Goose was dead.
+  </p>
+ </div>
+</div>
 
 </body>
+<script>
+   var synth = window.speechSynthesis;
+      function speechText(){
+        var inputTxt = document.getElementById("blog1").innerHTML;
+        console.log(inputTxt)
+        var utterThis = new SpeechSynthesisUtterance(inputTxt);;
+        synth.speak(utterThis);
+      }
+
+      function speechText2(){
+        var inputTxt = document.getElementById("blog2").innerHTML;
+        console.log(inputTxt)
+        var utterThis = new SpeechSynthesisUtterance(inputTxt);;
+        synth.speak(utterThis);
+      }
+</script>
 </html>
