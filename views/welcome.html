@@ -203,9 +203,10 @@
   </div>
 </div>
 
-<div class = "online">
+<div class = "online" id="online">
 <h4>Check if your friends are online!</h4>  
 <img src ="../static/speaker.png" id = "speaker" onclick = "speechText('Check if your friends are online!')" height ="20px" width = 20px>
+<div id='online1'><div>
 </div>
 
 
@@ -213,7 +214,11 @@
 
     <script src="/socket.io/socket.io.js"></script>
     <script>
-
+      const queryString = window.location.search;
+      console.log(queryString);
+      const urlParams = new URLSearchParams(queryString);
+      const username = urlParams.get('email');
+      document.getElementById('online1').innerHTML=username+'<br>';
       //var message = document.querySelector('#message');getinput
       
       // var $chat=$('#message-container');
